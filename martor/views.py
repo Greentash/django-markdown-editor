@@ -9,7 +9,6 @@ from django.contrib.auth import get_user_model
 
 from .api import imgur_uploader
 from .settings import MARTOR_MARKDOWNIFY_FUNCTION
-from .utils import LazyEncoder
 
 User = get_user_model()
 
