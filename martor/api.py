@@ -36,7 +36,7 @@ def imgur_uploader(image):
             'name': response_data['data']['name']
         })
 
-    elif response.status_code == 415:
+    if response.status_code == 415:
         # Unsupport File type
         return json.dumps({
             'status': response.status_code,
